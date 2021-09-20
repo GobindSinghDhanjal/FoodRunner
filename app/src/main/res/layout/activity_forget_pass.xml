@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.ForgetPassActivity"
+    android:orientation="vertical"
+    android:background="#ff5139">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:src="@drawable/food"
+        android:layout_margin="30dp"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Enter your registered mobile number and email below :"
+        android:textSize="18sp"
+        android:layout_margin="30dp"
+        android:textColor="#ffffff"/>
+
+    <EditText
+        android:id="@+id/etMobileForget"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Mobile Number (10 digits)"
+        android:maxLength="10"
+        android:drawableLeft="@drawable/ic_phone"
+        android:drawablePadding="5dp"
+        android:maxLines="1"
+        android:inputType="phone"
+        android:background="#ffffff"
+        android:layout_margin="20dp"
+        android:padding="10dp"/>
+
+    <EditText
+        android:id="@+id/etEmailForget"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Email Address"
+        android:maxLines="1"
+        android:drawableLeft="@drawable/ic_email"
+        android:drawablePadding="5dp"
+        android:background="#ffffff"
+        android:inputType="textEmailAddress"
+        android:layout_margin="20dp"
+        android:padding="10dp"/>
+
+    <Button
+        android:id="@+id/btnNextForget"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Next"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:layout_margin="20dp"
+        android:backgroundTint="#ef2732"
+        android:padding="10dp"/>
+
+</LinearLayout>

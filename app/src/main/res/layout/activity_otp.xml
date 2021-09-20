@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.OtpActivity"
+    android:background="@color/orangePrimary">
+
+    <TextView
+        android:id="@+id/txtEnterOTP"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Enter the received OTP below"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_margin="10dp"
+        android:padding="10dp"
+        android:textAlignment="center"/>
+
+    <EditText
+        android:id="@+id/etOtp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:padding="10dp"
+        android:background="@color/white"
+        android:layout_below="@+id/txtEnterOTP"
+        android:hint="OTP (4 characters)"/>
+
+    <EditText
+        android:id="@+id/etNewPass"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:padding="10dp"
+        android:background="@color/white"
+        android:layout_below="@+id/etOtp"
+        android:hint="New Password"/>
+
+    <EditText
+        android:id="@+id/etNewPassConfirm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:padding="10dp"
+        android:background="@color/white"
+        android:layout_below="@+id/etNewPass"
+        android:hint="Confirm Password"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnSubmit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/red"
+        android:layout_below="@+id/etNewPassConfirm"
+        android:layout_margin="10dp"
+        android:padding="10dp"
+        android:text="Submit"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark"
+        android:textSize="20sp"
+        android:textStyle="bold"/>
+
+
+
+</RelativeLayout>
